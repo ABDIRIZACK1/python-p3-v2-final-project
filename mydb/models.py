@@ -10,3 +10,6 @@ class Player:
         self.name = name
         self.team_id = team_id
         self.position = position
+        
+        
+        twdqwg
