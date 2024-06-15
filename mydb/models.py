@@ -12,4 +12,4 @@ class Player:
         self.position = position
         
         
-        twdqwg
+        
