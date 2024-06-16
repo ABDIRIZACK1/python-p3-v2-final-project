@@ -31,7 +31,7 @@ This is a database system for managing athletes, events, and results in a sports
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/sports-house-db-system.git
+   git@github.com:ABDIRIZACK1/python-p3-v2-final-project.git
 Install dependencies:
 
 
