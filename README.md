@@ -1,119 +1,66 @@
-# Phase 3 Project: CLI and ORM
+# Sports Database System
 
-## Learning Goals
+This is a database system for managing athletes, events, and results in a sports house.
 
-- Implement a Python application that includes a **Command Line Interface**.
-- Implement a set of **Object-Relational Mapping** functions for two or more
-  model classes.
-- Define a Python object model that includes a one-to-many relationship between
-  two classes.
-- Exercise best practices in CLI design.
-- Exercise best practices in OOP.
+## Table of Contents
 
----
+- [Features](#features)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Usage](#usage)
+- [Database Model](#database-model)
+- [Sample Data](#sample-data)
+- [Contributing](#contributing)
+- [License](#license)
 
-## Key Vocab
+## Features
 
-- **Command Line**: a text-based interface that is built into your computer's
-  operating system. It allows you to access the files and applications on your
-  computer manually or through scripts.
-- **Terminal**: the application in Mac OS that allows you to access the command
-  line.
-- **Command Shell/Powershell**: the applications in Windows that allow you to
-  access the command line.
-- **Command-Line Interface (CLI)**: a text-based interface used to run programs,
-  manage files and interact with objects in memory. As the name suggests, it is
-  run from the command line.
-- **Object-Relational Mapping (ORM)**: a programming technique that provides a
-  mapping between an object-oriented data model and a relational database model.
-- **Attribute**: variables that belong to an object.
-- **Property**: attributes that are controlled by methods.
-- **Decorator**: function that takes another function as an argument and returns
-  a new function with added functionality.
+- Teams, Transfer,Loans, Matches and Players.
+- Store information such as Matches details, transfer details,Loans details,teams details and competition players.
 
----
+## Getting Started
 
-## Introduction
+### Prerequisites
 
-Welcome to the end of Phase 3! You've learned about a lot in this unit:
+- [Python](https://www.python.org/downloads/) (>=3.6)
+- [SQLite](https://www.sqlite.org/index.html)
 
-- Python fundamentals.
-- Data structures (and more recently, algorithms).
-- Object-oriented programming.
-- Object inheritance.
-- Instance and class attributes and methods.
-- Configuring applications.
-- SQL fundamentals.
-- Table relations in SQL.
-- Object-relational mapping with Python.
-- Building CLIs.
+### Installation
 
-You're going to use these skills to create a CLI and ORM application. The Phase
-3 project is open-ended when it comes to the actual content. You are free to
-create whatever you'd like, as long as it incorporates the requirements listed
-below.
+1. Clone the repository:
 
-## Requirements
+   ```bash
+   git clone https://github.com/your-username/sports-house-db-system.git
+Install dependencies:
 
-You need to implement a Python CLI Application that meets the following
-requirements.
 
-### ORM Requirements
+pip install -r requirements.txt
+Initialize the database:
 
-- The application must include a database created and modified with Python ORM
-  methods that you write.
+python model.py
+Usage
+Run the application:
 
-  - The data model must include **at least 2** model classes.
-  - The data model must include **at least 1** one-to-many relationships.
-  - Property methods should be defined to add appropriate constraints to each
-    model class.
-  - Each model class should include ORM methods (create, delete, get all, and
-    find by id at minimum).
+python your_main_script.py
+Access the application via the provided user interface or APIs.
 
-### CLI Requirements
+Database Model
+The database has three main entities:
 
-- The CLI must display menus with which a user may interact.
-- The CLI should use loops as needed to keep the user in the application until
-  they choose to exit.
-- For **EACH** class in the data model, the CLI must include options: to create
-  an object, delete an object, display all objects, view related objects, and
-  find an object by attribute.
-- The CLI should validate user input and object creations/deletions, providing
-  informative errors to the user.
+Teams: Represents information about teams.
+Transfer: Represents information about a sports transfer.
+Matches: Represents the result of an athlete in a specific match.
+Player: Represents information about a players
+For more details, check the database model section.
 
-# Project Environment, Configuration, Documentation
+Sample Data
+Sample data is provided for testing purposes. You can use this data or replace it with your own.
 
-- The project code should follow OOP best practices.
-- Pipfile contains all needed dependencies and no unneeded dependencies.
-- Imports are used in files only where necessary.
-- Project folders, files, and modules should be organized and follow appropriate
-  naming conventions.
-- The project should include a `README.md` that describes the application.
+Contributing
+Contributions are welcome! Please follow the contributing guidelines.
 
-You do **not** need to implement tests for `pytest`, although you should test
-your code thoroughly using your CLI. Try entering bad data when prompted for
-input, and confirm your application prints a useful error message.
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-## How to begin?
-
-- Start with the project template (provided in the following lesson). You are
-  free to adapt the template structure, as long as you adhere to the project
-  requirements.
-- Think about the user interaction. How will you prompt the user? What
-  information will the user enter? How will you provide feedback to the user?
-- Think about your data model. How will you organize and store the information
-  received from the user?
-- If you get stuck trying to accomplish a specific task, check online to see if
-  there's a Python library that will make it easier.
-- Consider using [Click][click] or [Fire][fire] to take care of basic CLI tasks
-  for you.
-
----
-
-## Resources
-
-- [Click documentation][click]
-- [The Python Fire Guide][fire]
-
-[click]: https://click.palletsprojects.com/en/8.1.x/
-[fire]: https://google.github.io/python-fire/guide/
+author ABIRIZACK OSMAIL
